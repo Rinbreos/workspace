@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FileManager.java&apos; to &apos;Student Registration System/src/com.acme.educationapps&apos;&#x0D;&#x0A;- Original project: &apos;FileIO&apos;&#x0D;&#x0A;- Destination element: &apos;Student Registration System/src/com.acme.educationapps&apos;&#x0D;&#x0A;- Original element: &apos;com.example.fileio.FileManager.java&apos;" description="Copy compilation unit" destination="=Student Registration System/src&lt;com.acme.educationapps" element1="/src&lt;com.example.fileio{FileManager.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1509389193025" units="1" version="1.0"/>
+</session>

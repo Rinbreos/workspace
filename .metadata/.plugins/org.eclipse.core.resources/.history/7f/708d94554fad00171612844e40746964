@@ -1,0 +1,27 @@
+package com.r8me4.weatherapp;
+
+public class AppDriver {
+
+	public static void main(String[] args) {
+		
+		 final int MAX_UPDATE = 5;
+		 
+		 WeatherReader wr = new WeatherReader();
+		
+		 class x extends WeatherReader implements WeatherListener{
+			 @Override 
+			 public void onUpdate(int temp){
+				 System.out.println("The temp is " +  temp);
+			 }
+		 }
+		 wr.setListener(new x(){
+
+		 });
+		 if(wr.getNumberOfUpdates()> MAX_UPDATE){
+			 wr.off();
+			 System.out.println("The weather reader has been turned off!");
+		 }
+		 wr.on();
+	}
+
+}

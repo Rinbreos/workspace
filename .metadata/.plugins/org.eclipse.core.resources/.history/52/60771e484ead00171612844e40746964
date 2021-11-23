@@ -1,0 +1,15 @@
+package com.r8me4.weatherapp;
+
+public class AppDriver {
+
+	public static void main(String[] args) {
+		
+		 final int MAX_UPDATE = 5;
+		 
+		 WeatherReader wr = new WeatherReader();
+		 wr.setListener();
+		 
+
+	}
+
+}

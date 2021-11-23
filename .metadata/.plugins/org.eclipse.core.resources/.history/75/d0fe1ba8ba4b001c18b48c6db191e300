@@ -1,0 +1,21 @@
+package LinkedList;
+
+import java.util.*;
+
+public class LinkedListProject {
+	
+	public static void main(String[] args) {
+		// TODO I am creating a LinkedList
+		LinkedList<String> linkedlist = new LinkedList<String>();
+		
+		//populating with a list of string items
+		linkedlist.add("Bob");
+		linkedlist.add("Sally");
+		linkedlist.add("Joe");
+		linkedlist.add("Mary");
+		
+		//Printing out the original list
+		System.out.println(linkedlist);
+	}
+
+}

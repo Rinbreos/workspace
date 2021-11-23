@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class RPS {
+
+	public static void main(String[] args) {
+		// This program is a Rock Paper Scissors game
+		
+		// tracks wins, losses, and ties
+		
+	  //int wins = 0;
+	  //int lose = 0;
+	  //int ties = 0;
+		
+		String rock;
+		String paper;
+		String scissors;
+		
+		// Announce what is needs to be done
+		
+		String greeting = "This is Rock, Paper, Scissors you will have to put in the first intial for what you want to play.";
+		System.out.println(greeting);
+		Scanner input = new Scanner(System.in);	
+		
+		String user1 = "User 1 Please enter your choice of play.";
+		String input1 = input.next();
+		System.out.println(user1);
+		
+		String user2 = "User 2 Please enter your choice of play.";
+		String input2 = input.next();
+		System.out.println(user2);
+		
+		
+		// you will want to implement an ignore case prior to checking the input
+		// == not just = for strings
+		if(input1 == "rock" && input2 == "rock"){
+			System.out.println("Both of you are tied!");
+		}else if(input1 == "rock" && input2 == "scissors"){
+			System.out.println("User1 has won!");
+		}else if(input1 == "rock" && input2 == "paper"){
+			System.out.println("User2 has won!");
+		}else if(input1 == "scissors" && input2 == "scissors" ){
+			System.out.println("Both of you are tied!");
+		}else if(input1 == "scissor" && input2 == "paper"){
+			System.out.println("User1 has won!");
+		}else if(input1 == "scissors" && input2 == "rock"){
+			System.out.println("User2 has won!");
+		}else if(input1 == "paper" && input2 == "paper"){
+			System.out.println("Both of you are tied!");
+		}else if(input1 == "paper" && input2 == "rock"){
+			System.out.println("User1 has won!");
+		}else if(input1 == "paper" && input2 == "scissors"){
+			System.out.println("User2 has won!");
+		}else{
+			System.out.println("What the heck!");
+			main(null);
+			System.exit(0);
+		}
+		
+				
+		
+
+	}
+
+}
